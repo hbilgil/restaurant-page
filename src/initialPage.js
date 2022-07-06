@@ -42,3 +42,35 @@ function createHeaderLogoDiv() {
     return logoDiv;
 
 }
+
+/*----Header Buttons Creation Function----*/
+
+function createHeaderButtons() {
+
+    const headerButtons = document.createElement('div');
+    headerButtons.classList.add('flex');
+
+    const homeButton = document.createElement('button');
+    homeButton.textContent = 'Home';
+    homeButton.onclick = loadHomePage;
+
+    const aboutButton = document.createElement('button');
+    aboutButton.textContent = 'About';
+    aboutButton.onclick = loadAboutPage;
+
+    const menuButton = document.createElement('button');
+    menuButton.textContent = 'Menu';
+    menuButton.onclick = loadMenuPage;
+
+    const contactUsButton = document.createElement('button');
+    contactUsButton.textContent = 'Contact Us';
+    contactUsButton.onclick = loadContactUsPage;
+
+    headerButtons.appendChild(homeButton);
+    headerButtons.appendChild(aboutButton);
+    headerButtons.appendChild(menuButton);
+    headerButtons.appendChild(contactUsButton);
+
+    return headerButtons;
+
+}
