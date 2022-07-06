@@ -1,6 +1,10 @@
 
 //IMPORTING MODULES & METHODS
 
+import loadHomePage from './home'; 
+import loadAboutPage from './about';
+import loadMenuPage from './menu';
+import loadContactUsPage from './contactUs';
 import Logo from './images/logo.png'
 
 //BODY ELEMENTS CREATION FUNCTIONS
@@ -110,7 +114,7 @@ function createFooter() {
 //WEBPAGE ONLOAD FUNCTION (will be imported by index.js)
 
 function initialPageLoader() { // a function to load all elements inside the body
-    
+
     const content = document.getElementById("content");
   
     content.appendChild(createHeader());
