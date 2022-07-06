@@ -1,6 +1,7 @@
 //IMPORTING IMAGES
 
 import smallIcon from './images/eat.png';
+import largeIcon from './images/chef.jpeg';
 
 // HOMEPAGE CREATION FUNCTION
 
@@ -42,6 +43,21 @@ function createMainDivNo1() {
 
     return mainDivNo1;
 
+}
+
+/*----Main Div No-2 Creation Function----*/
+
+function createMainDivNo2() {
+
+    const mainDivNo2 = document.createElement('div');
+    mainDivNo2.classList.add('two');
+
+    const mainDivNo2Img = new Image();
+    mainDivNo2Img.src = largeIcon;
+    mainDivNo2.appendChild(mainDivNo2Img);
+
+    return mainDivNo2;
+    
 }
 
 export default loadHomePage;
