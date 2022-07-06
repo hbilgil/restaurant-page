@@ -85,3 +85,24 @@ function createMainDiv() { //this function just creates a blank div as the conte
     return mainDiv;
 
 }
+
+/*----FOOTER DIV CREATION FUNCTION----*/
+
+function createFooter() {
+
+    const footer = document.createElement('div');
+    footer.classList.add("footer");
+  
+    const copyrightText = document.createElement('p');
+    copyrightText.textContent = `Copyright © ${new Date().getFullYear()}`;
+    footer.appendChild(copyrightText);
+  
+    const githubLink = document.createElement('a');
+    githubLink.href = 'https://github.com/hbilgil';
+    githubLink.setAttribute('target', '_blank');
+    githubLink.textContent = ' Halil Bilgil'
+    copyrightText.appendChild(githubLink);
+  
+    return footer;
+
+}
