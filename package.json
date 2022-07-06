@@ -1,10 +1,11 @@
 {
-  "name": "ls",
+  "name": "restaurant-page",
   "version": "1.0.0",
   "description": "Practicing DOM manipulation by dynamically rendering a simple restaurant homepage by using JavaScript alone to generate the entire contents of the website!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
     "build": "webpack"
   },
   "repository": {
