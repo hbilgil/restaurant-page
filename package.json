@@ -4,13 +4,14 @@
   "description": "Practicing DOM manipulation by dynamically rendering a simple restaurant homepage by using JavaScript alone to generate the entire contents of the website!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hbilgil/restaurant-page.git"
   },
-  "author": "",
+  "author": "Halil Bilgil",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hbilgil/restaurant-page/issues"
