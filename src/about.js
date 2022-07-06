@@ -6,14 +6,17 @@ function loadAboutPage() {
     main.textContent = '';
 
     const aboutPageDiv = document.createElement('div');
-    aboutPageDiv.classList.add('content');
+    aboutPageDiv.classList.add('about-content');
 
     const aboutPageHeader = document.createElement('h1');
     aboutPageDiv.appendChild(aboutPageHeader);
     aboutPageHeader.textContent = "About Us";
 
+    const aboutPageContent = document.createElement('div');
+    aboutPageDiv.appendChild(aboutPageContent);
+
     const aboutPageText = document.createElement('p');
-    aboutPageDiv.appendChild(aboutPageText);
+    aboutPageContent.appendChild(aboutPageText);
     aboutPageText.textContent = "This story started one day when my mother left us at home with my cousin." + 
                                 " We were hungry; I made menemen, potato salad and rice. I was only 9 years old." + 
                                 " Even though I was shy at first when my mother returned home, I was very pleased" + 
@@ -29,7 +32,7 @@ function loadAboutPage() {
 
     const aboutPageImage = new Image();
     aboutPageImage.src = aboutImage;
-    aboutPageDiv.appendChild(aboutPageImage);
+    aboutPageContent.appendChild(aboutPageImage);
 
     main.appendChild(aboutPageDiv);
 
