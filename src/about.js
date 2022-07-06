@@ -1,4 +1,4 @@
-import aboutImage from './images/eat.png';
+import aboutImage from './images/owner.jpeg';
 
 function loadAboutPage() {
 
@@ -15,7 +15,7 @@ function loadAboutPage() {
     const aboutPageText = document.createElement('p');
     aboutPageDiv.appendChild(aboutPageText);
     aboutPageText.textContent = "This story started one day when my mother left us at home with my cousin." + 
-                                " We were hungry; I made menemen, potato salad and rice. I am only 9 years old." + 
+                                " We were hungry; I made menemen, potato salad and rice. I was only 9 years old." + 
                                 " Even though I was shy at first when my mother returned home, I was very pleased" + 
                                 " with the way she appreciated me and liked my food. That dream has started since then." + 
                                 " It's a dream that lasted 40 years. Even though the years passed in life abroad by working in different sectors," +
