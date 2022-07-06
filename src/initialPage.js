@@ -106,3 +106,18 @@ function createFooter() {
     return footer;
 
 }
+
+//WEBPAGE ONLOAD FUNCTION (will be imported by index.js)
+
+function initialPageLoader() { // a function to load all elements inside the body
+    
+    const content = document.getElementById("content");
+  
+    content.appendChild(createHeader());
+    content.appendChild(createMainDiv());
+    content.appendChild(createFooter());
+    
+    loadHomePage();
+}
+  
+export default initialPageLoader;
