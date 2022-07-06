@@ -74,3 +74,14 @@ function createHeaderButtons() {
     return headerButtons;
 
 }
+
+/*----MAIN DIV CREATION FUNCTION----*/
+
+function createMainDiv() { //this function just creates a blank div as the content will be changed accordingly by importing contents from JS files
+    
+    const mainDiv = document.createElement('div');
+    mainDiv.classList.add('main-container');
+    mainDiv.setAttribute('id', 'main');
+    return mainDiv;
+
+}
