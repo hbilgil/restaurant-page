@@ -134,6 +134,39 @@ button:hover {
     border-radius: 50%;
 }
 
+.about-content {
+    position: relative;
+    margin: 30px;
+    padding: 30px;
+}
+
+.about-content h1 {
+    padding: 20px;
+    font-size: 60px;
+    font-family: 'MyFont';
+}
+
+.about-content > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-content p {
+    padding: 20px;
+    font-size: 26px;
+    margin-top: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+}
+
+.about-content img {
+    border: none;
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+}
+
 .footer {
     display: flex;
     align-items: center;
