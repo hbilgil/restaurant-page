@@ -41,10 +41,10 @@ function loadContactUsPage() {
 
     const hoursInfoImage = new Image();
     hoursInfoImage.src = watchImage;
-    contactUsAddressInfo.appendChild(hoursInfoImage);
+    contactUsHoursInfo.appendChild(hoursInfoImage);
 
     const hoursInfoPara = document.createElement('p');
-    contactUsAddressInfo.appendChild(hoursInfoPara);
+    contactUsHoursInfo.appendChild(hoursInfoPara);
     hoursInfoPara.textContent = 'Mon-Saturday: 8 am to 8 pm';
 
     const contactUsPhoneInfo = document.createElement('div');
@@ -53,10 +53,10 @@ function loadContactUsPage() {
 
     const phoneInfoImage = new Image();
     phoneInfoImage.src = phoneImage;
-    contactUsAddressInfo.appendChild(phoneInfoImage);
+    contactUsPhoneInfo.appendChild(phoneInfoImage);
 
     const phoneInfoPara = document.createElement('p');
-    contactUsAddressInfo.appendChild(phoneInfoPara);
+    contactUsPhoneInfo.appendChild(phoneInfoPara);
     phoneInfoPara.textContent = '(0222) 888 88 88';
 
     const contactUsContactFormDiv = document.createElement('div');
@@ -70,12 +70,16 @@ function loadContactUsPage() {
     setAttributes(contactUsContactForm, attributesForContactForm);
     contactUsContactFormDiv.appendChild(contactUsContactForm);
 
+    const contactFormCaptionDiv = document.createElement('div');
+    contactFormCaptionDiv.classList.add('caption-div');
+    contactUsContactForm.appendChild(contactFormCaptionDiv);
+
     const contactFormImage = new Image();
     contactFormImage.src = letterImage;
-    contactUsContactForm.appendChild(contactFormImage);
+    contactFormCaptionDiv.appendChild(contactFormImage);
 
     const contactFormHeading = document.createElement('h3');
-    contactUsContactForm.appendChild(contactFormHeading);
+    contactFormCaptionDiv.appendChild(contactFormHeading);
     contactFormHeading.textContent = 'Message Us';
 
     const contactFormNameInput = document.createElement('div');
@@ -126,8 +130,9 @@ function loadContactUsPage() {
 
     const contactUsMapContainer = document.createElement('div');
     contactUsMapContainer.innerHTML = '<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Uluonder Mh. İsmet İnönü 2 Cd. No: 47/16&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">FNF Mods</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>'
+    contactUsMapContainer.classList.add('map-container');
     contactUsPageDiv.appendChild(contactUsMapContainer);
-    
+
     main.appendChild(contactUsPageDiv);
 
     return contactUsPageDiv;
