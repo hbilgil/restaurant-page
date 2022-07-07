@@ -62,7 +62,7 @@ function loadServicesPage() {
     const activeItemInnerDiv = document.createElement('div');
     const attributesForActiveItemInnerDiv = {
         class: 'carousel-item active',
-        'data-bs-interval': '8000'
+        'data-bs-interval': '9000'
     };
     setAttributes(activeItemInnerDiv, attributesForActiveItemInnerDiv);
     carouselInnerDiv.appendChild(activeItemInnerDiv);
@@ -92,7 +92,7 @@ function loadServicesPage() {
 
     const attributesForNo2ItemInnerDiv = {
         class: 'carousel-item',
-        'data-bs-interval': '8000'
+        'data-bs-interval': '9000'
     };
     setAttributes(No2ItemInnerDiv, attributesForNo2ItemInnerDiv);
     carouselInnerDiv.appendChild(No2ItemInnerDiv);
