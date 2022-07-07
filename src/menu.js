@@ -5,7 +5,7 @@ import No3Image from './images/No3Food.jpeg';
 import 'bootstrap/js/dist/carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function loadMenuPage() {
+function loadServicesPage() {
 
     const main = document.getElementById('main');
     main.textContent = ''
@@ -199,4 +199,4 @@ function setAttributes(element, attributes) {
     });
 }
 
-export default loadMenuPage;
+export default loadServicesPage;
