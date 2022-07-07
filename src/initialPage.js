@@ -3,7 +3,7 @@
 
 import loadHomePage from './home'; 
 import loadAboutPage from './about';
-import loadMenuPage from './menu';
+import loadServicesPage from './menu';
 import loadContactUsPage from './contactUs';
 import Logo from './images/logo.png'
 
@@ -63,8 +63,8 @@ function createHeaderButtons() {
     aboutButton.onclick = loadAboutPage;
 
     const menuButton = document.createElement('button');
-    menuButton.textContent = 'Menu';
-    menuButton.onclick = loadMenuPage;
+    menuButton.textContent = 'Services';
+    menuButton.onclick = loadServicesPage;
 
     const contactUsButton = document.createElement('button');
     contactUsButton.textContent = 'Contact Us';
