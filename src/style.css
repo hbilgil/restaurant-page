@@ -1,5 +1,6 @@
 /*Global prop declarations*/
 
+
 @font-face {
     font-family: 'MyFont';
     src: url('./fonts/Comfortaa-VariableFont_wght.ttf');
@@ -13,7 +14,6 @@
     font-family: 'MyLogoFont';
     src: url('./fonts/RockSalt-Regular.ttf');
 }
-
 
 * {
     margin:0;
@@ -33,7 +33,7 @@
 body {
     background-color: aliceblue;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     height: 100%;
     width: 100%;
@@ -62,6 +62,7 @@ span {
     color: gray;
     font-family: 'MyLogoFont';
 }
+
 .logo.flex {
     margin-top: 10px;
 }
@@ -170,13 +171,36 @@ button:hover {
     height: auto;
 }
 
+#carouselExampleDark {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.carousel-caption {
+    background-color: black;
+    opacity: 0.7;
+}
+
+.carousel-caption > h5 {
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.carousel-caption > p {
+    color: white;
+    font-size: 20px;
+}
+
 .footer {
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: center;
     background-color: #393f4d;
     color: white;
-    height: 30px;
 }
 
 .footer a {
